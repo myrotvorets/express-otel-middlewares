@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "sourceType": "module"
+  },
+  "extends": [
+    "@myrotvorets/myrotvorets-ts"
+  ],
+  "env": {
+    "es2022": true,
+    "node": true
+  }
+}
