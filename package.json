@@ -1,5 +1,5 @@
 {
-  "name": "express-otel-middlewares",
+  "name": "@myrotvorets/express-otel-middlewares",
   "version": "1.0.0",
   "description": "",
   "type": "module",
