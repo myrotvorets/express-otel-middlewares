@@ -15,7 +15,7 @@ export function errorLoggerHook(
 
             if (error.status >= 500) {
                 logger.error(message);
-            } else if (error.status >= 400) {
+            } else if (error.status >= 400 && error.status !== 404) {
                 logger.warning(message);
             }
         }

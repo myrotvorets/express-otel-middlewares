@@ -16,7 +16,7 @@ export function requestLoggerMiddleware(service: string, loggerFromRequest: Logg
             if (logger) {
                 const { status } = tokens;
                 const statusCode = +(status ?? 0);
-                const message = `Status: ${status} len: ${tokens['res[content-length]']} time: ${tokens['total-time']}`;
+                const message = `Status: ${status} len: ${tokens['res[content-length]'] ?? '-'} time: ${tokens['total-time']}`;
 
                 if (statusCode >= 500 || err) {
                     logger.error(message);
