@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@myrotvorets/eslint-config-myrotvorets-ts": "^2.25.0",
-    "@myrotvorets/express-microservice-middlewares": "^3.0.0",
+    "@myrotvorets/express-microservice-middlewares": "^3.1.0",
     "@myrotvorets/express-request-logger": "^1.2.1",
     "@myrotvorets/oav-installer": "^5.0.0",
     "@myrotvorets/otel-utils": "^1.2.0",
