@@ -2,9 +2,9 @@ import type { Request, RequestHandler } from 'express';
 import type { Histogram } from '@opentelemetry/api';
 import { hrTime, hrTimeDuration, hrTimeToMilliseconds } from '@opentelemetry/core';
 import {
-    SEMATTRS_HTTP_METHOD,
-    SEMATTRS_HTTP_ROUTE,
-    SEMATTRS_HTTP_STATUS_CODE,
+    ATTR_HTTP_REQUEST_METHOD,
+    ATTR_HTTP_RESPONSE_STATUS_CODE,
+    ATTR_HTTP_ROUTE,
 } from '@opentelemetry/semantic-conventions';
 import type { OpenApiRequest } from '@myrotvorets/oav-installer';
 
@@ -37,9 +37,9 @@ export function requestDurationMiddleware(requestDurationHistogram: Histogram): 
             const route = extractRoute(req);
 
             requestDurationHistogram.record(hrTimeToMilliseconds(duration), {
-                [SEMATTRS_HTTP_METHOD]: req.method,
-                [SEMATTRS_HTTP_ROUTE]: route,
-                [SEMATTRS_HTTP_STATUS_CODE]: res.statusCode,
+                [ATTR_HTTP_REQUEST_METHOD]: req.method,
+                [ATTR_HTTP_ROUTE]: route,
+                [ATTR_HTTP_RESPONSE_STATUS_CODE]: res.statusCode,
             });
         };
 
