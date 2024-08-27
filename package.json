@@ -25,7 +25,7 @@
     "@myrotvorets/express-request-logger": "^1.2.1",
     "@opentelemetry/api": "^1.8.0",
     "@opentelemetry/core": "^1.23.0",
-    "@opentelemetry/semantic-conventions": "^1.23.0"
+    "@opentelemetry/semantic-conventions": "^1.26.0"
   },
   "devDependencies": {
     "@myrotvorets/eslint-config-myrotvorets-ts": "^2.26.0",
@@ -35,7 +35,7 @@
     "@myrotvorets/otel-utils": "^1.3.1",
     "@opentelemetry/api": "^1.8.0",
     "@opentelemetry/core": "^1.23.0",
-    "@opentelemetry/semantic-conventions": "^1.23.0",
+    "@opentelemetry/semantic-conventions": "^1.26.0",
     "@types/express": "^4.17.21",
     "eslint-formatter-gha": "^1.4.3"
   },
