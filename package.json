@@ -28,7 +28,7 @@
     "@opentelemetry/semantic-conventions": "^1.36.0"
   },
   "devDependencies": {
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.1.1",
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^4.0.0",
     "@myrotvorets/express-microservice-middlewares": "^3.1.2",
     "@myrotvorets/express-request-logger": "^1.2.3",
     "@myrotvorets/oav-installer": "^5.0.1",
